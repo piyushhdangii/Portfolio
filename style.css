@@ -1,0 +1,485 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    margin: 10px;
+    border: 5px solid #d4af37;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navigation:hover{
+    box-shadow: 2px 2px 10px #d4af37;
+}
+.navigation > a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #d4af37;
+}
+
+.navigation > a:hover{
+    text-shadow: 0 0 2px #d4af37;
+}
+
+#Home{
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greetings{
+    color: #f5f5f5;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.AB{
+    color: #f5f5f5;
+    font-size: 30px;
+    border: 3px solid #d4af37;
+    margin-bottom: 30px;
+    box-shadow: -2px -2px 10px #d4af37;
+}
+.B{
+    margin-left: 40px;
+}
+
+.first_name {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    text-shadow: 2px 2px 10px black;
+}
+
+.letters_1{
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.letters_1:hover{
+    box-shadow: 0 0 20px #d4af37
+}
+
+.letters_1:nth-child(2n) {
+    background-color: #f5f5f5;
+    color: #d4af37;
+}
+
+.letters_1:nth-child(2n+1) {
+    background-color: #d4af37;
+    color: #f5f5f5;
+}
+
+.last_name{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    margin-left: 50px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.letters_2 {
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.letters_2:hover{
+    box-shadow: 0 0 20px #d4af37;
+}
+
+.letters_2:nth-child(2n+1) {
+    background-color: #f5f5f5;
+    color: #d4af37;
+}
+
+.letters_2:nth-child(2n) {
+    background-color: #d4af37;
+    color: #f5f5f5;
+}
+
+.C{
+    font-size: 30px;
+    color: #f5f5f5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 45px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #121212;
+    border: 3px solid #d4af37;
+    text-shadow: 0 0 10px #f5f5f5;
+}
+.button > a{
+    text-decoration: none;
+    color: #d4af37;
+}
+.button:hover{
+    box-shadow: 0 0 10px #f5f5f5;
+}
+
+.me{
+    color: #d4af37;
+    font-size: 30px;
+}
+#About{
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    padding: 0 20px;
+}
+#about-text{
+    text-decoration: underline;
+}
+.introHeading{
+    color: #f5f5f5;
+    font-size: 50px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+.intro{
+    color:#f5f5f5;
+    width: 810px;
+    max-width: 100%;
+    font-size: 30px;
+    padding: 25px;
+    border: 2px solid #d4af37;
+    box-shadow: -10px -10px 20px #d4af37;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+#Skills{
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+#MySkills{
+    text-decoration: underline;
+}
+.boxes{
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4af37;
+    border-radius: 50px;
+    box-shadow: -2px -2px 5px #f5f5f5;
+    margin: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.boxes:hover{
+    box-shadow: -10px -10px 25px #f5f5f5;
+}
+
+.forGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#Contact{
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+.social{
+    display: flex;
+    width: 512px;
+    max-width: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.instagram{
+    margin-left: -50px;
+}
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #000;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #999;
+}
+
+@media screen and (max-width: 1024px) {
+    .forGrid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+    
+    .intro {
+        width: 90%;
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        width: 90%;
+        max-width: 400px;
+        height: 45px;
+    }
+    
+    .navigation > a {
+        font-size: 24px;
+    }
+    
+    #Home {
+        padding: 80px 15px;
+    }
+    
+    .greetings {
+        font-size: 24px;
+    }
+    
+    .first_name {
+        grid-template-columns: repeat(6, 70px);
+    }
+    
+    .letters_1 {
+        height: 70px;
+        width: 70px;
+        font-size: 70px;
+    }
+    
+    .last_name {
+        grid-template-columns: repeat(5, 70px);
+        margin-left: 35px;
+    }
+    
+    .letters_2 {
+        height: 70px;
+        width: 70px;
+        font-size: 70px;
+    }
+    
+    .B {
+        margin-left: 35px;
+    }
+    
+    .C {
+        font-size: 24px;
+    }
+    
+    .button {
+        font-size: 20px;
+        height: 40px;
+        width: 180px;
+    }
+    
+    .introHeading {
+        font-size: 40px;
+    }
+    
+    .intro {
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    .forGrid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+    }
+    
+    .boxes {
+        width: 250px;
+        margin: 15px;
+    }
+    
+    .social {
+        width: 90%;
+    }
+    
+    .instagram {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        width: 95%;
+        height: 40px;
+        border: 3px solid #d4af37;
+    }
+    
+    .navigation > a {
+        font-size: 18px;
+    }
+    
+    #Home {
+        padding: 70px 10px;
+    }
+    
+    .greetings {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .AB {
+        font-size: 24px;
+        border: 2px solid #d4af37;
+    }
+    
+    .first_name {
+        grid-template-columns: repeat(6, 50px);
+    }
+    
+    .letters_1 {
+        height: 50px;
+        width: 50px;
+        font-size: 50px;
+    }
+    
+    .last_name {
+        grid-template-columns: repeat(5, 50px);
+        margin-left: 25px;
+    }
+    
+    .letters_2 {
+        height: 50px;
+        width: 50px;
+        font-size: 50px;
+    }
+    
+    .B {
+        margin-left: 25px;
+    }
+    
+    .C {
+        font-size: 20px;
+    }
+    
+    .button {
+        font-size: 18px;
+        height: 35px;
+        width: 160px;
+    }
+    
+    #About, #Skills, #Contact {
+        font-size: 24px;
+    }
+    
+    .introHeading {
+        font-size: 32px;
+        margin: 20px 0;
+    }
+    
+    .intro {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    #Skills, #Contact {
+        margin-top: 60px;
+    }
+    
+    .forGrid {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        max-width: 350px;
+    }
+    
+    .boxes {
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    .social {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navigation > a {
+        font-size: 16px;
+    }
+    
+    .greetings {
+        font-size: 18px;
+    }
+    
+    .first_name {
+        grid-template-columns: repeat(6, 40px);
+    }
+    
+    .letters_1 {
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+    }
+    
+    .last_name {
+        grid-template-columns: repeat(5, 40px);
+        margin-left: 20px;
+    }
+    
+    .letters_2 {
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+    }
+    
+    .B {
+        margin-left: 20px;
+    }
+    
+    .introHeading {
+        font-size: 28px;
+    }
+    
+    .intro {
+        font-size: 16px;
+    }
+}
